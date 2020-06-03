@@ -2,28 +2,28 @@ import React, { Component } from 'react';
 
 import Header from './Header';
 import Player from './Player';
-
+import AddPlayerForm from './AddPlayerForm';
 
 class App extends Component {
   state = {
     players: [
       {
-        name: "Guil",
+        name: "Matt Atto",
         score: 0,
         id: 1
       },
       {
-        name: "Treasure",
+        name: "Jiji Cat",
         score: 0,
         id: 2
       },
       {
-        name: "Ashley",
+        name: "Momma Bear",
         score: 0,
         id: 3
       },
       {
-        name: "James",
+        name: "Dr G-Easy",
         score: 0,
         id: 4
       }
@@ -64,6 +64,8 @@ class App extends Component {
             removePlayer={this.handleRemovePlayer}           
           />
         )}
+
+        <AddPlayerForm />
       </div>
     );
   }
